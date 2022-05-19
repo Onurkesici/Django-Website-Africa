@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="discover">Discover</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icon">
+                    <a href="https://globalheritagefund.org/" target="_blank">
+                        <i class="fa-solid fa-earth-africa"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-2">
+                    <h1>ABOUT US</h1>
+                    <p>
+                        To date, only observing the natural environment with episode episodes in his books on television offers something invaluable. This special holiday presents the day of observing the extraordinary life of African tribes. You are invited to Africa to live life with all its reality, to turn excitement to peaks, to experience all its beauties. African safari tours bring you the exciting holiday of your dreams. You are in the right place to spend a holiday sunbathing on the beach. Come on! If your bag is ready, before you leave. Let the adventure begin!
+                    </p>
+                </div>
+                <div class="col-2">
+                    <div class="box">
+                        <img src="{% static 'images/africa2.jpg' %}" alt="">
+                        <img src="{% static 'images/çita.jpg' %}" alt="">
+                        <img src="{% static 'images/africa.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

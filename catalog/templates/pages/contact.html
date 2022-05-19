@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="discover">Discover</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icon">
+                    <a href="https://globalheritagefund.org/" target="_blank">
+                        <i class="fa-solid fa-earth-africa"></i>
+                    </a>
+                </div>
+            </div>
+            <body>
+                <div class="forms">
+                    <h1>CONTACT FORM</h1>
+                    <form action="#">
+                        <div class="form-control">
+                            <input type="text" required>
+                            <label for="#">Username</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" required>
+                            <label for="#">Email</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" required>
+                            <label for="#">Subject</label>
+                        </div>
+                        <div class="form-control">
+                            <textarea cols="30" rows="5" required></textarea>
+                            <label for="#">Message</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="submit" value="Form Submit">
+                        </div>
+                    </form>
+                </div>
+            </body>
+        </div>
+    </div>
+{% endblock %}

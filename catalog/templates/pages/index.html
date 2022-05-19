@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="discover">Discover</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icon">
+                    <a href="https://globalheritagefund.org/" target="_blank">
+                        <i class="fa-solid fa-earth-africa"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-2">
+                    <h1>THIS<br><span>IS LIFE</span></h1>
+                    <p>
+                        Are you ready for a real adventure? You will never forget your safari holiday, where you will meet lions, giraffes, crocodiles, rhinoceros and many other wild animals in an untouched, unique nature!
+                    </p>
+                    <a href="https://www.go2africa.com/tours-safaris" target="_blank" class="btn">Explore Now</a>
+                </div>
+                <div class="col-2">
+                    <div class="box">
+                        <video src="{% static 'images/videoson.mp4' %}" autoplay muted loop></video>
+                        <img src="{% static 'images/africa.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
